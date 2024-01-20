@@ -1,95 +1,95 @@
 import Image from 'next/image'
-import styles from './page.module.css'
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <>
+    <section className="ftco-section">
+			<div className="container">
+				<div className="row justify-content-center mb-5 pb-2">
+          <div className="col-md-8 text-center heading-section ">
+          	<span className="subheading">Pacjent</span>
+            <h2 className="mb-4">Informacje dla pacjenta</h2>
+            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+          </div>
+        </div>	
+				<div className="row">
+					<div className="accordion" id="accordion">
+            <div className="accordion-item border-0 py-3">
+              <h2 className="accordion-header">
+                <button
+                  className="accordion-button fs-4  text-dark bg-transparent focus-transparent text-capitalize shadow-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Why to believe with Insove medical healthcare ?
+                </button>
+              </h2>
+              <div id="collapseOne" className="accordion-collapse border-0 collapse show" data-bs-parent="#accordion">
+                <div className="accordion-body">
+                  <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt nam lectus
+                    nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique ultricies
+                    consectetu at.</p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item border-0 py-3">
+              <h2 className="accordion-header">
+                <button
+                  className="accordion-button fs-4  text-dark bg-transparent collapsed focus-transparent text-capitalize shadow-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Will we get healthcare updates after surgery ?
+                </button>
+              </h2>
+              <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                <div className="accordion-body">
+                  <p>This is the second item's accordion body.It is hidden by default, until the collapse plugin adds the
+                    appropriate classNamees that we use to style each element. These classNamees control the overall appearance,
+                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our default variables.</p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item border-0 py-3">
+              <h2 className="accordion-header">
+                <button
+                  className="accordion-button fs-4  text-dark bg-transparent collapsed focus-transparent text-capitalize shadow-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  What is the cost for just check-up ?
+                </button>
+              </h2>
+              <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                <div className="accordion-body">
+                  <p>This is the third item's accordion body.It is hidden by default, until the collapse plugin adds the
+                    appropriate classNamees that we use to style each element. These classNamees control the overall appearance,
+                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our default variables.</p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item border-0 py-3">
+              <h2 className="accordion-header">
+                <button
+                  className="accordion-button fs-4 text-dark bg-transparent collapsed focus-transparent text-capitalize shadow-none"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Can i cancel my appointment ?
+                </button>
+              </h2>
+              <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordion">
+                <div className="accordion-body">
+                  <p>This is the third item's accordion body.It is hidden by default, until the collapse plugin adds the
+                    appropriate classNamees that we use to style each element. These classNamees control the overall appearance,
+                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                    overriding our default variables.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+    </>
   )
 }
