@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import GoogleMapTag from '@/components/GoogleMapTag'
+import Content from "@/public/json/ContactMap.json";
 
 const GoogleMapTxt = () => {
     return (
@@ -9,9 +10,9 @@ const GoogleMapTxt = () => {
             <div className="container">
                 <div className="row justify-content-center mb-5 pb-2">
                     <div className="col-md-8 text-center heading-section">
-                        <span className="subheading">Lokalizacja</span>
-                        <h2 className="mb-4">Znajdź nas na mapie</h2>
-                        <p>Potrzebujesz pomocy? skontaktuj się z nami! W razie rezygnacji z umówionej wizyty, proszę o powiadomienie telefoniczne lub sms-owe.<br />Uzgodnimy dogodny termin kolejnego spotkania.</p>
+                        <span className="subheading">{Content.title}</span>
+                        <h2 className="mb-4">{Content.subtitle}</h2>
+                        <p>{Content.minititle}</p>
                     </div>
                 </div>
             </div>

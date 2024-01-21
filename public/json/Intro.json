@@ -1,0 +1,26 @@
+{
+    "title": "Nasz Gabinet",
+    "subtitle": "Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.",
+    "items": [
+        {
+            "name": "General Practitioners",
+            "icon": "",
+            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+        },
+        {
+            "name": "Pregnancy Support",
+            "icon": "",
+            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+        },
+        {
+            "name": "Nutritional Support",
+            "icon": "",
+            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+        },
+        {
+            "name": "Pharmaceutical care",
+            "icon": "",
+            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+        }
+    ]
+}

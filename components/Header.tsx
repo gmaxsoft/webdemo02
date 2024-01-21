@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Content from "@/public/json/Header.json";
 
 const header = () => {
     return (
@@ -12,7 +13,7 @@ const header = () => {
                                 <Image
                                     className=""
                                     src="/images/logo.webp"
-                                    alt="Serwis Agd Logo"
+                                    alt="Logo Dentysta"
                                     width={273}
                                     height={50}
                                     sizes="100vw"
@@ -30,16 +31,16 @@ const header = () => {
                                 <i className="fa-solid fa-location-dot"></i>
                             </div>
                             <div className="pr-md-4 pl-md-0 pl-3 text">
-                                <p className="con"><span>Tel:</span> <span><a href="tel:+48504219034" title='Telefon do dentysty'>(+48) 504-219-034</a></span></p>
-                                <p className="con">Bohaterów Westerplatte 9 piętro II pok. 216<br />65-034 Zielona Góra</p>
+                                <p className="con"><span>{Content.dataphonename}</span> <span><a href={`tel:${Content.datalink}`} title='Telefon do dentysty'>{Content.dataphone}</a></span></p>
+                                <p className="con" dangerouslySetInnerHTML={{ __html: Content.dataaddress }}></p>
                             </div>
                         </div>
                         <div className="col-md-4 order-md-3 d-flex topper mb-md-0 align-items-center">
                             <div className="icon d-flex justify-content-center align-items-center"><i className="fa-regular fa-clock"></i></div>
                             <div className="text pl-3 pl-md-3">
-                                <p className="hr"><span>Goddziny Otwarcia</span></p>
-                                <p className="time"><span>Pn-Śr:</span> <span>10:00am - 15:00pm</span></p>
-                                <p className="time"><span>Wt-Cz:</span> <span>14:00am - 18:00pm</span></p>
+                                <p className="hr"><span>{Content.datahours}</span></p>
+                                <p className="time"><span>{Content.data_01}</span> <span>{Content.data_03}</span></p>
+                                <p className="time"><span>{Content.data_02}</span> <span>{Content.data_04}</span></p>
                             </div>
                         </div>
                     </div>

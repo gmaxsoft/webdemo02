@@ -1,5 +1,7 @@
 "use client"
+import Content from "@/public/json/Footer.json";
 import Image from 'next/image'
+import Link from 'next/link';
 
 const footer = () => {
     return (
@@ -29,7 +31,7 @@ const footer = () => {
                                         priority
                                     />
                                 </a>
-                                <p className="text-justify pr2rem"><strong>Stomatolog Zielona góra</strong>,  Dentysta, Gabinet Stomatologiczny Zielena góra, <strong>Dentysta Zielona góra</strong>, Gabinet Dentystyczny<br /><br />Stomatolog, <strong>Zielona Góra</strong>, Leczenie kanałowe, Protetyka, Chirurgia, Stomatologia estetyczna,  <strong>Protezy acronowe (elastyczne)</strong></p>
+                                <p className="text-justify pr2rem" dangerouslySetInnerHTML={{ __html: Content.tags }}></p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
@@ -37,18 +39,12 @@ const footer = () => {
                                 <h5 className="widget-title fw-semibold">Godziny otwarcia</h5>
                                 <table className="schedule" width="100%">
                                     <tbody>
-                                        <tr className="d-flex justify-content-between border-bottom py-2">
-                                            <td>Poniedziałek - Czwartek: </td>
-                                            <td className="text-primary">10:00 - 18:00</td>
-                                        </tr>
-                                        <tr className="d-flex justify-content-between border-bottom py-2">
-                                            <td>Piątek:</td>
-                                            <td className="text-primary">10:00- 14:00</td>
-                                        </tr>
-                                        <tr className="d-flex justify-content-between border-bottom py-2">
-                                            <td>Sobota:</td>
-                                            <td className="text-primary">Tylko z bólem</td>
-                                        </tr>
+                                        {Content.items.map((item, key) => (
+                                            <tr className="d-flex justify-content-between border-bottom py-2">
+                                                <td>{item.name} </td>
+                                                <td className="text-primary">{item.text}</td>
+                                            </tr>
+                                        ))}
                                     </tbody>
                                 </table>
                             </div>
@@ -56,24 +52,26 @@ const footer = () => {
 
                         <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
                             <div className="footer-menu">
-                                <h5 className="widget-title pb-2 fw-semibold">Dane kontaktowe</h5>
+                                <h5 className="widget-title pb-2 fw-semibold">{Content.datatitle}</h5>
                                 <div className="contact-item">
-                                    <p className="py-2"><strong>Prywatna praktyka stomatologiczna</strong><br />Lek. Stomatolog Anna Miśków</p>
+                                    <p className="py-2" dangerouslySetInnerHTML={{ __html: Content.dataname }}></p>
                                     <p className="py-2">
                                         <i className="fa-solid fa-location-dot"></i>
-                                        <span>Bohaterów Westerplatte 9<br />piętro II pok. 216 (winda)<br />65-034 Zielona Góra</span>
+                                        <span dangerouslySetInnerHTML={{ __html: Content.dataaddress }}></span>
                                     </p>
                                     <p>
                                         <i className="fa-solid fa-phone"></i>
-                                        <span><a href="tel:+48504219034" title="Telefon">(+48) 504-219-034</a></span>
+                                        <span><a href={`tel:${Content.datalink}`} title="Telefon">{Content.dataphone}</a></span>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="d-md-flex text-center justify-content-between border-top mt-5 py-4">
-                        <p>© 2023 Zielona Góra, Stomatolog-Dentysta.pl - Wszystkie prawa zastrzeżone.</p>
-                        <p>Realizacja: <a href="https://www.maxsoft.pl/" className="fw-semibold" title="Projektowanie stron www"> MaxSoft</a></p>
+                        <p>{Content.copyrights}</p>
+                        <p>
+                            {Content.realization} <Link href={Content.companylink} className={`fw-semibold`} title={Content.companytag}>{Content.company}</Link>
+                        </p>
                     </div>
                 </div>
             </footer>

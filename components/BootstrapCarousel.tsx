@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { items } from "@/public/json/Items.json";
+import { items } from "@/public/json/Slider.json";
 import { Carousel } from "react-bootstrap";
 
 export default function BootstrapCarousel() {
@@ -15,10 +15,6 @@ export default function BootstrapCarousel() {
       {bootstrap.map((item) => (
         <Carousel.Item key={item.id} className="item" interval={4000}>
           <img src={item.imageUrl} alt="slides" />
-          <Carousel.Caption className="caption">
-            <h3>{item.body}</h3>
-            <a href="/oferta" className="btn btn-danger" title="Oferta">Zobacz ofertę</a>
-          </Carousel.Caption>
         </Carousel.Item>
       ))}
     </Carousel>

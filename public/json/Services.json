@@ -1,0 +1,47 @@
+{
+    "title": "Oferta",
+    "subtitle": "Oferta naszego gabinetu",
+    "minititle": "Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country",
+    "items": [
+        {
+            "name": "Dental Implants",
+            "icon": "flaticon-drilling",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Cosmetic Dentistry",
+            "icon": "flaticon-tooth",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Dental Care",
+            "icon": "flaticon-dental-floss",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Teeth Whitening",
+            "icon": "flaticon-shiny-tooth",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Dental Calculus",
+            "icon": "flaticon-dentist-chair",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Periondontics",
+            "icon": "flaticon-tooth-1",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Clip & Braces",
+            "icon": "flaticon-tooth-with-braces",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        },
+        {
+            "name": "Root Canel",
+            "icon": "flaticon-decayed-tooth",
+            "text": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+        }
+    ]
+}

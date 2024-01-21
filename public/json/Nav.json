@@ -1,0 +1,30 @@
+{
+    "menu": "Menu",
+    "items": [
+        {
+            "name": "Start",
+            "link": "/",
+            "text": "Strona główna"
+        },
+        {
+            "name": "Gabinet",
+            "link": "/gabinet",
+            "text": "Gabinet stomatologiczny"
+        },
+        {
+            "name": "Oferta",
+            "link": "/oferta",
+            "text": "Oferta gabinetu"
+        },
+        {
+            "name": "Galeria",
+            "link": "/galeria",
+            "text": "Galeria narzędzi stomatologicznych"
+        },
+        {
+            "name": "Kontakt",
+            "link": "/kontakt",
+            "text": "Kontakt Stomatolog Zielona Góra"
+        }
+    ]
+}

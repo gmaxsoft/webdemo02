@@ -1,0 +1,31 @@
+{
+    "tags": "<strong>Stomatolog Zielona góra</strong>,  Dentysta, Gabinet Stomatologiczny Zielena góra, <strong>Dentysta Zielona góra</strong>, Gabinet Dentystyczny<br /><br />Stomatolog, <strong>Zielona Góra</strong>, Leczenie kanałowe, Protetyka, Chirurgia, Stomatologia estetyczna,  <strong>Protezy acronowe (elastyczne)</strong>",
+    "datatitle": "Dane kontaktowe",
+    "dataname": "<strong>Prywatna praktyka stomatologiczna</strong><br />Lek. Stomatolog Anna Miśków",
+    "dataaddress": "Bohaterów Westerplatte 9<br />piętro II pok. 216 (winda)<br />65-034 Zielona Góra",
+    "dataphone": "(+48) 504-219-034",
+    "datalink": "+48504219034",
+    "copyrights": "© 2023 Zielona Góra, Stomatolog-Dentysta.pl - Wszystkie prawa zastrzeżone.",
+    "realization": "Realizacja:",
+    "company": "MaxSoft",
+    "companylink": "https://www.maxsoft.pl/",
+    "companytag": "Projektowanie stron www",
+    "items": [
+        {
+            "name": "Poniedziałek - Środa:",
+            "text": "10:00 - 15:00"
+        },
+        {
+            "name": "Wtorek - Czwartek:",
+            "text": "14:00- 18:00"
+        },
+        {
+            "name": "Piątek:",
+            "text": "Po uzg. telefonicznym"
+        },
+        {
+            "name": "Sobota - Niedziela:",
+            "text": "Wolne"
+        }
+    ]
+}
