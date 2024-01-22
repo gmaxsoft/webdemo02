@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link'
 import Content from "@/public/json/Header.json";
 
 const header = () => {
@@ -9,9 +10,9 @@ const header = () => {
                 <div className="container">
                     <div className="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
                         <div className="col-md-4 order-md-2 mb-2 mb-md-0 align-items-center text-center">
-                            <a className="navbar-brand" href="/" title='Logo Dentysta Zielona Góra'>
+                            <Link className="navbar-brand" href="/" title='Logo Dentysta Zielona Góra'>
                                 <Image
-                                    className=""
+                                    className="animate__animated animate__pulse"
                                     src="/images/logo.webp"
                                     alt="Logo Dentysta"
                                     width={273}
@@ -20,11 +21,12 @@ const header = () => {
                                     style={{
                                         width: '100%',
                                         height: 'auto',
-                                        maxWidth: '273px'
+                                        maxWidth: '273px',
+                                        minHeight: '45px'
                                     }}
                                     priority
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-md-4 order-md-1 d-flex topper mb-md-0 mb-2 align-items-center text-md-right">
                             <div className="icon d-flex justify-content-center align-items-center order-md-last">

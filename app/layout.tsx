@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import "@/public/css/all.min.css"; 
 import '@/styles/scss/style.scss'
 import "@/styles/scss/flaticon/flaticon.css"
+import "animate.css"
 
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'

@@ -20,7 +20,7 @@ const TopInfo = () => {
 
             {Content.items.map((item, key) => (
               <div className="col-lg-3 col-md-6 pb-3">
-                <div className="icon-box p-4 bg-light border-radius-10 text-center shadow-lg">
+                <div className="icon-box p-4 bg-light border-radius-10 text-center shadow-lg animate__animated animate__pulse">
                   <div className="icon-box-icon">
                   {item.icon}
                   </div>

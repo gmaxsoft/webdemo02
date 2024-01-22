@@ -13,9 +13,9 @@ const footer = () => {
                 <div className="container">
                     <div className="row d-flex flex-wrap justify-content-between">
 
-                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
+                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3 mt-3">
                             <div className="footer-menu">
-                                <a className="navbar-brand" href="/" title='Logo Dentysta Zielona Góra'>
+                                <Link className="navbar-brand" href="/" title='Logo Dentysta Zielona Góra'>
                                     <Image
                                         className="pb-3"
                                         src="/images/logo.webp"
@@ -26,15 +26,16 @@ const footer = () => {
                                         style={{
                                             width: '100%',
                                             height: 'auto',
-                                            maxWidth: '273px'
+                                            maxWidth: '273px',
+                                            minHeight: '60px'
                                         }}
                                         priority
                                     />
-                                </a>
+                                </Link>
                                 <p className="text-justify pr2rem" dangerouslySetInnerHTML={{ __html: Content.tags }}></p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
+                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3 mt-3">
                             <div className="footer-menu">
                                 <h5 className="widget-title fw-semibold">Godziny otwarcia</h5>
                                 <table className="schedule" width="100%">
@@ -50,7 +51,7 @@ const footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
+                        <div className="col-lg-4 col-md-6 col-sm-6 pb-3 mt-3">
                             <div className="footer-menu">
                                 <h5 className="widget-title pb-2 fw-semibold">{Content.datatitle}</h5>
                                 <div className="contact-item">

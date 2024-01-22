@@ -9,16 +9,15 @@ const Services = () => {
       <section className="ftco-section ftco-services">
         <div className="container">
           <div className="row justify-content-center mb-5 pb-2">
-            <div className="col-md-8 text-center heading-section ">
+            <div className="col-md-8 text-center heading-section animate__animated animate__fadeIn">
               <span className="subheading">{Content.title}</span>
               <h2 className="mb-4">{Content.subtitle}</h2>
               <p>{Content.minititle}</p>
             </div>
           </div>
           <div className="row">
-
             {Content.items.map((item, key) => (
-              <div className="col-md-3 d-flex services align-self-stretch p-4 ">
+              <div className="col-md-3 d-flex services align-self-stretch p-4 animate__animated animate__shakeY">
                 <div className="media block-6 d-block text-center">
                   <div className="icon d-flex justify-content-center align-items-center">
                   <span className={item.icon}></span>

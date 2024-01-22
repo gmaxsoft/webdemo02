@@ -14,7 +14,7 @@ const ParallaxImg = () => {
 						<div className="row">
 							<div className="col-md-12 rem-6 align-items-center text-center">
 								<h2>{Content.title}</h2>
-								<p className="mb-0">{Content.subtitle}</p>
+								<p className="mb-4">{Content.subtitle}</p>
 							</div>
 						</div>
 					</div>
