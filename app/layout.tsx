@@ -7,16 +7,9 @@ import "@/styles/scss/flaticon/flaticon.css"
 
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
-import BootstrapCarousel from '@/components/BootstrapCarousel';
-import TopInfo from '@/components/TopInfo';
-import Services from '@/components/Services';
-import ParallaxImgTop from '@/components/ParallaxImgTop';
-import ParallaxImg from '@/components/ParallaxImg';
-import ContactMap from '@/components/ContactMap';
 import Footer from '@/components/Footer'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import BootstrapClient from '@/components/BootstrapClient'
-import { Contact } from 'lucide-react';
 
 const poppins = Poppins({
   weight: ['300','400','500','600','700'],
@@ -25,8 +18,31 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Dentysta Zielona Góra - Anna Miśków, Stomatolog Zielona Góra, dentysta zielona góra, Protezy acronowe, Protezy',
-  description: 'Dentysta Zielona Góra, stomatolog Zielona Góra,korony cyrkonowe,Gabinet Stomatologiczny Anna Miśków, dentysta zielona Góra, Stomatologia zielona góra, dentysta Anna Miśków, Protezy acronowe (elastyczne)',
+  metadataBase: new URL('https://www.stomatolog-dentysta.pl/'),
+  title: 'Dentysta Zielona Góra - Anna Miśków, dentysta Zielona Góra, stomatolog zielona góra, Protezy acronowe,Protezy',
+  description: 'Dentysta Zielona Góra,stomatolog Zielona Góra,wybielanie zębów,korony cyrkonowe,Gabinet Stomatologiczny Anna Miśków,dentysta zielona Góra,Stomatologia zielona góra,dentysta Anna Miśków,Protezy acronowe (elastyczne)',
+  keywords: 'stomatolog zielona góra, dentysta zielona góra, Dentysta, gabinet stomatologiczny, Protezy acronowe, Anna Miśków, korony cyrkonowe, zielona góra, gabinet, wybielanie zębów',
+  openGraph: {
+    title: 'Dentysta Zielona Góra - Anna Miśków, dentysta Zielona Góra, stomatolog zielona góra, Protezy acronowe,Protezy',
+    description: 'Dentysta Zielona Góra,stomatolog Zielona Góra,wybielanie zębów,korony cyrkonowe,Gabinet Stomatologiczny Anna Miśków,dentysta zielona Góra,Stomatologia zielona góra',
+    url: 'https://www.stomatolog-dentysta.pl/',
+    siteName: 'Dentysta Zielona Góra',
+    locale: 'pl_PL',
+    images: '/opengraph-image.jpg'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dentysta Zielona Góra - Anna Miśków, dentysta Zielona Góra, stomatolog zielona góra, Protezy acronowe,Protezy',
+    description: 'Dentysta Zielona Góra,stomatolog Zielona Góra,wybielanie zębów,korony cyrkonowe,Gabinet Stomatologiczny Anna Miśków,dentysta zielona Góra,Stomatologia zielona góra',
+    images: '/twitter-image.jpg'
+  },
+  robots: {
+    index: true,
+    follow: true
+  },
+  alternates: {
+    canonical: "/",
+  }
 }
 
 export default function RootLayout({
@@ -39,13 +55,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Header />
         <Navigation />
-        <BootstrapCarousel />
-        <TopInfo />
-        <Services />
-        <ParallaxImgTop />
         {children}
-        <ParallaxImg />
-        <ContactMap />
         <Footer />
         <ScrollToTopButton />
         <BootstrapClient />

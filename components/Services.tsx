@@ -1,12 +1,11 @@
 "use client"
 import Content from "@/public/json/Services.json";
+import Divider from '@/components/Divider';
 
 const Services = () => {
   return (
     <>
-      <section id="subscribe" className="d-flex align-items-center ftco-bg-dark">
-        <p>&nbsp;</p>
-      </section>
+      <Divider />
       <section className="ftco-section ftco-services">
         <div className="container">
           <div className="row justify-content-center mb-5 pb-2">

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import GoogleMapTag from '@/components/GoogleMapTag'
+import GoogleMap from '@/components/GoogleMap'
 import Content from "@/public/json/ContactMap.json";
 
 const GoogleMapTxt = () => {
@@ -19,7 +19,7 @@ const GoogleMapTxt = () => {
             <div className="col-sm-12 col-md-12 col-lg-12">
                 <div className="row">
                     <div className="col-md-12">
-                        <GoogleMapTag />
+                        <GoogleMap />
                     </div>
                 </div>
             </div>

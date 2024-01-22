@@ -10,11 +10,11 @@ const TopInfo = () => {
           <div className="row">
 
             <div className="display-header text-light d-flex flex-wrap justify-content-between padding-medium">
-              <div className="col-lg-5 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-6 col-sm-12">
                 <h2 className="text-light">{Content.title}</h2>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12">
-                <p className="text-light">{Content.subtitle}</p>
+              <div className="col-lg-7 col-md-6 col-sm-12">
+                <p className="text-light justify">{Content.subtitle}</p>
               </div>
             </div>
 

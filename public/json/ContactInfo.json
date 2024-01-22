@@ -1,0 +1,37 @@
+{
+    "title": "Kontakt",
+    "subtitle": "Dane Kontaktowe",
+    "minititle": "Wszystkich zainteresowanych zachęcam do kontaktu telefonicznego w celu umówienia na wizytę. Nasz gabinet stomatologiczny mieści się na II piętrze. W budynku jest winda.",
+    "subtitle_01": "Podstawowe Informacje",
+    "subtitle_02": "Godziny Otwarcia",
+    "subtitle_03": "Gabinet Stomatologiczny",
+    "txt_01": "Gabinet jest czynny jest od poniedziałku do soboty. Każdą wizytę prosimy poprzedzać rejestracją telefoniczną.",
+    "txt_02": "W gabinecie świadczone są profesjonalne usługi przy użyciu najnowocześniejszego sprzętu. Zapewniamy miłą atmosferę i oferujemy kompleksową opiekę stomatologiczną opartą na rzetelnej wiedzy i najnowszych technologiach w procesie leczenia.",
+    "txt_03": "Każdy nasz Pacjent traktowany jest indywidualnie. Zapraszamy do zapoznania się z naszą ofertą przedstawioną na stronie internetowej, dzięki której można dowiedzieć się więcej o świadczonych przez nas usługach i ich kosztach",
+    "txt_04": "Serdecznie Zapraszamy!",
+    "minitxt_01": "Rejestracja pod numerem:",
+    "minitxt_02": "Lek. stomatolog Anna Miśków",
+    "minitxt_03": "Bohaterów Westerplatte 9",
+    "minitxt_04": "piętro II pok. 216 (winda)",
+    "minitxt_05": "65-034 Zielona Góra",
+    "minitxt_06": "(+48) 504-219-034",
+    "minitxt_07": "tel:+48504219034",
+    "items": [
+        {
+            "name": "Poniedziałek - Środa:",
+            "text": "10:00 - 15:00"
+        },
+        {
+            "name": "Wtorek - Czwartek:",
+            "text": "14:00- 18:00"
+        },
+        {
+            "name": "Piątek:",
+            "text": "Po uzg. telefonicznym"
+        },
+        {
+            "name": "Sobota - Niedziela:",
+            "text": "Wolne"
+        }
+    ]
+}

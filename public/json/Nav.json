@@ -7,19 +7,14 @@
             "text": "Strona główna"
         },
         {
-            "name": "Gabinet",
-            "link": "/gabinet",
-            "text": "Gabinet stomatologiczny"
-        },
-        {
             "name": "Oferta",
             "link": "/oferta",
             "text": "Oferta gabinetu"
         },
         {
-            "name": "Galeria",
-            "link": "/galeria",
-            "text": "Galeria narzędzi stomatologicznych"
+            "name": "Pacjent",
+            "link": "/pacjent",
+            "text": "Informacje dla pacjenta"
         },
         {
             "name": "Kontakt",

@@ -1,26 +1,26 @@
 {
-    "title": "Nasz Gabinet",
-    "subtitle": "Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.",
+    "title": "Gabinet Stomatologiczny",
+    "subtitle": "W gabinecie świadczone są profesjonalne usługi przy użyciu najnowocześniejszego sprzętu. Zapewniamy miłą atmosferę i oferujemy kompleksową opiekę stomatologiczną opartą na rzetelnej wiedzy i najnowszych technologiach w procesie leczenia.",
     "items": [
         {
-            "name": "General Practitioners",
+            "name": "Stomatologia dziecięca",
             "icon": "",
-            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+            "text": "Leczenie próchnicy u dzieci, Lapisowanie zębów mlecznych, lakowanie."
         },
         {
-            "name": "Pregnancy Support",
+            "name": "Stomatologia ogólna",
             "icon": "",
-            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+            "text": "Leczenie próchnicy, Leczenie endodontyczne (kanałowe), chirurgia."
         },
         {
-            "name": "Nutritional Support",
+            "name": "Stomatologia estetyczna",
             "icon": "",
-            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+            "text": "Wybielanie zębów, licówki kompozytowe, korony pełnoceramiczne."
         },
         {
-            "name": "Pharmaceutical care",
+            "name": "Protetyka stomatologiczna",
             "icon": "",
-            "text": "Aliquam etiam lectus adipiscing est auctor mi quisque non viverra."
+            "text": "Protezy acronowe (elastyczne), mosty, korony cyrkonowe, odbudowa zębów."
         }
     ]
 }
