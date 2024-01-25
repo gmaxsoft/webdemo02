@@ -1,11 +1,13 @@
-import Services from '@/components/Services';
+import Divider from '@/components/Divider';
+import ProtetykaTag from '@/components/Protetyka';
 import BefroreAfter from '@/components/BefroreAfter';
 import ParallaxImg from '@/components/ParallaxImg';
 
-export default function Oferta() {
+export default function Protetyka() {
   return (
     <>
-      <Services />
+      <Divider />
+      <ProtetykaTag />
       <ParallaxImg />
       <BefroreAfter />
     </>

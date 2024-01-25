@@ -12,6 +12,11 @@
             "text": "Oferta gabinetu"
         },
         {
+            "name": "Protetyka",
+            "link": "/protetyka",
+            "text": "Protetyka stomatologiczna"
+        },
+        {
             "name": "Pacjent",
             "link": "/pacjent",
             "text": "Informacje dla pacjenta"
@@ -19,7 +24,7 @@
         {
             "name": "Kontakt",
             "link": "/kontakt",
-            "text": "Kontakt Stomatolog Zielona Góra"
+            "text": "Kontakt stomatolog Zielona Góra"
         }
     ]
 }

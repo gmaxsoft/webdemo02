@@ -37,7 +37,7 @@ const footer = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 pb-3 mt-3">
                             <div className="footer-menu">
-                                <h5 className="widget-title fw-semibold">Godziny otwarcia</h5>
+                                <h2 className="widget-title pb-2 fw-semibold">Godziny otwarcia</h2>
                                 <table className="schedule" width="100%">
                                     <tbody>
                                         {Content.items.map((item, key) => (
@@ -53,7 +53,7 @@ const footer = () => {
 
                         <div className="col-lg-4 col-md-6 col-sm-6 pb-3 mt-3">
                             <div className="footer-menu">
-                                <h5 className="widget-title pb-2 fw-semibold">{Content.datatitle}</h5>
+                                <h2 className="widget-title pb-2 fw-semibold">{Content.datatitle}</h2>
                                 <div className="contact-item">
                                     <p className="py-2" dangerouslySetInnerHTML={{ __html: Content.dataname }}></p>
                                     <p className="py-2">

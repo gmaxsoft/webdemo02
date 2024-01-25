@@ -6,10 +6,10 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
-    //output: 'export',
+    output: 'export',
     images: {
-        formats: ['image/avif', 'image/webp']
-        //unoptimized: true
+        formats: ['image/avif', 'image/webp'],
+        unoptimized: true
     }
 }
 

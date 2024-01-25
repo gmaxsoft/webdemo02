@@ -11,7 +11,7 @@ const TopInfo = () => {
 
             <div className="display-header text-light d-flex flex-wrap justify-content-between padding-medium">
               <div className="col-lg-4 col-md-6 col-sm-12">
-                <h2 className="text-light">{Content.title}</h2>
+                <h1 className="text-light tworem">{Content.title}</h1>
               </div>
               <div className="col-lg-7 col-md-6 col-sm-12">
                 <p className="text-light justify">{Content.subtitle}</p>
