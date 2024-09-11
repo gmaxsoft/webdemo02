@@ -16,7 +16,6 @@ const ContactInfo = () => {
                         </div>
                     </div>
                     <div className="row">
-
                         <div className="col-sm-12 col-md-6 col-lg-6">
                             <h2 className="column-title">{Content.subtitle_01}</h2>
                             <p>{Content.txt_01}</p>
@@ -36,13 +35,22 @@ const ContactInfo = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12">
                             <h2 className="column-title">{Content.subtitle_03}</h2>
                             <p>{Content.txt_02}</p>
                             <p>{Content.txt_03}</p>
                             <p>{Content.txt_04}</p>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-12">
+                            <h2 className="column-title">{Content.subtitle_04}</h2>
+                            <p>{Content.txt_05}</p>
+                            <p>{Content.txt_06}</p>
                         </div>
                     </div>
                 </div>

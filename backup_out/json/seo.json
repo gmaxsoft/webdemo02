@@ -1,0 +1,27 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "url": "https://www.stomatolog-dentysta.pl/",
+    "name": "ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra",
+    "alternateName": "Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra",
+    "description": "Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe",
+    "openingHours": "Poniedziałek, Wtorek, Środa, Czwartek, Piątek 10:00-14:00, Sobota po ugodnieniu telefoninczym, Niedziela NIECZYNNE",
+    "image": "https://www.stomatolog-dentysta.pl/opengraph-image.jpg",
+    "telephone": "+48504219034",
+    "priceRange": "od 200,- PLN",
+    "address": [
+        {
+            "@type": "PostalAddress",
+            "addressLocality": "Zielona góra",
+            "postalCode": "65-034",
+            "streetAddress": "Bohaterów Westerplatte 9"
+        }
+    ],
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+48504219034",
+            "contactType": "Rezerwacja"
+        }
+    ]
+}
