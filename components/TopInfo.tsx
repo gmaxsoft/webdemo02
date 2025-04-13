@@ -5,7 +5,6 @@ const TopInfo = () => {
   return (
     <>
       <section id="our-services" className="ftco-section padding-medium ImgBg" >
-        <style jsx>{`.ImgBg {background-image: url(images/services-bg.webp); background-repeat: no-repeat; background-position: center; background-position: top } `}</style>
         <div className="container">
           <div className="row">
 
@@ -19,7 +18,7 @@ const TopInfo = () => {
             </div>
 
             {Content.items.map((item, key) => (
-              <div className="col-lg-3 col-md-6 pb-3">
+              <div key={item.name} className="col-lg-3 col-md-6 pb-3">
                 <div className="icon-box p-4 bg-light border-radius-10 text-center shadow-lg animate__animated animate__pulse">
                   <div className="icon-box-icon">
                   {item.icon}

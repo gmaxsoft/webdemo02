@@ -2,6 +2,8 @@
 
 import React from 'react'
 import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
+//import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+//<AdvancedMarker position={position} />
 
 function GoogleMap() {
 
@@ -69,7 +71,7 @@ function GoogleMap() {
 	];
 
   return (
-    <APIProvider apiKey={'YOUR API KEY'}>
+    <APIProvider apiKey={'AIzaSyBQSEaJpTUx3J-lH-s9LJU3AgxAFTKuq5s'}>
       <Map 
         style={containerStyle}
         styles = {styles}
@@ -79,8 +81,7 @@ function GoogleMap() {
         gestureHandling={'greedy'}
         >
         
-        <Marker position={position} />
-      
+		<Marker position={position} />
       </Map>
     </APIProvider>
   );

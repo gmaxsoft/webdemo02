@@ -41,7 +41,7 @@ const footer = () => {
                                 <table className="schedule" width="100%">
                                     <tbody>
                                         {Content.items.map((item, key) => (
-                                            <tr className="d-flex justify-content-between border-bottom py-2">
+                                            <tr key={item.name} className="d-flex justify-content-between border-bottom py-2">
                                                 <td>{item.name} </td>
                                                 <td className="text-primary">{item.text}</td>
                                             </tr>

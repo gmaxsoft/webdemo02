@@ -1,0 +1,32 @@
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+#Header set X-Frame-Options "ALLOW-FROM URL"
+#Header set X-Content-Type-Options nosniff
+#Header set Referrer-Policy "same-origin"
+#Header always set Permissions-Policy "geolocation=(), midi=(),sync-xhr=(),accelerometer=(), gyroscope=(), magnetometer=(), camera=(), fullscreen=(self)"
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+DirectoryIndex index.html
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{THE_REQUEST} \ /(.+)\.php
+RewriteRule ^ /%1.html [L,R=301]
+RewriteRule ^(.*). php$ $1.html [QSA]
+
+Redirect 301 /wp-content/uploads/2021/06/5196-Cheap-Swiss-Made-RolexReplica-Ebay.html https://www.stomatolog-dentysta.pl/
+Redirect 301 /wp-content/uploads/2021/06/RolexReplica-Ebay-Cheap-Swiss-Made-For-Sale-In-Cleveland-Ohio.html https://www.stomatolog-dentysta.pl/
+Redirect 301 /wp-content/uploads/2021/06/Cheap-Swiss-Made-Sold-In-Retail-Stores-RolexReplica-Ebay.html https://www.stomatolog-dentysta.pl/
+Redirect 301 /images/portfolio/03.webp https://www.stomatolog-dentysta.pl/
+Redirect 301 /images/portfolio/02.webp https://www.stomatolog-dentysta.pl/
+Redirect 301 /images/portfolio/07.webp https://www.stomatolog-dentysta.pl/
+Redirect 301 /?yandex-source=desktop-maps https://www.stomatolog-dentysta.pl/
+Redirect 301 /?dentystastomatolog=3 https://www.stomatolog-dentysta.pl/

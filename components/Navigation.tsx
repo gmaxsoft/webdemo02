@@ -44,7 +44,7 @@ const Navigation = () => {
           <div className={`collapse navbar-collapse ${isActive ? 'show' : ''}`} id="ftco-nav">
             <ul className="navbar-nav m-auto">
               {Content.items.map((item, key) => (
-                <li className={`nav-item ${key === 0 ? 'active' : ''}`}>
+                <li key={item.name} className={`nav-item ${key === 0 ? 'active' : ''}`}>
                   <Link href={item.link} className={`nav-link ${key === 0 ? '' : 'pl-0'}`} title={item.text}>{item.name}</Link>
                 </li>
               ))}
