@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import Head from 'next/head';
 import { Poppins } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import Script from "next/script";
 import { LocalBusiness, WithContext } from 'schema-dts';
 import 'bootstrap/dist/css/bootstrap.css'
 import "@/public/css/all.min.css";
@@ -33,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dentysta Zielona Góra Anna Miśków|Protetyka Zielona Góra|dentysta Zielona Góra|stomatolog zielona góra',
     description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe',
-    url: 'https://www.stomatolog-dentysta.pl/',
+    url: 'https://www.stomatolog-dentysta.pl',
     siteName: 'ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
     locale: 'pl_PL',
     images: '/opengraph-image.jpg',
@@ -63,7 +61,7 @@ export default function RootLayout({
   const jsonLd: WithContext<LocalBusiness> = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "url": "https://www.stomatolog-dentysta.pl/",
+    "url": "https://www.stomatolog-dentysta.pl",
     "name": "ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra",
     "alternateName": "Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra",
     "description": "Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe",

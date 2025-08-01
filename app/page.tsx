@@ -10,8 +10,6 @@ import ContactMap from '@/components/ContactMap';
 
 export default function Home() {
 
-  //const nonce = headers().get("x-nonce");
-  //<Script src="https://..." strategy="afterInteractive" nonce={nonce} />;
   return (
     <>
       <BootstrapCarousel />

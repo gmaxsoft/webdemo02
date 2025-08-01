@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-//const withPlugins = require('next-compose-plugins');
-//const optimizedImages = require('next-optimized-images');
 const path = require('path')
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
 const nextConfig = {
   trailingSlash: true,

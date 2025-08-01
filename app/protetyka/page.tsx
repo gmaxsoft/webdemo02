@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Protetyka - Protetyka Zielona Góra, Dentysta Zielona Góra',
     description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Protetyka Zielona Góra, Protezy acronowe, korony cyrkonowe',
-    url: 'https://www.stomatolog-dentysta.pl/protetyka',
+    url: 'https://www.stomatolog-dentysta.pl/protetyka/',
     siteName: 'ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
     locale: 'pl_PL',
     images: '/opengraph-image.jpg',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     follow: true
   },
   alternates: {
-    canonical: "/protetyka",
+    canonical: "/protetyka/",
   }
 }
 

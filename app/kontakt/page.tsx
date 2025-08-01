@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kontakt - Dentysta Zielona Góra, Stomatolog Zielona Góra',
     description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe',
-    url: 'https://www.stomatolog-dentysta.pl/kontakt',
+    url: 'https://www.stomatolog-dentysta.pl/kontakt/',
     siteName: 'ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
     locale: 'pl_PL',
     images: '/opengraph-image.jpg',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     follow: true
   },
   alternates: {
-    canonical: "/kontakt",
+    canonical: "/kontakt/",
   }
 }
 
