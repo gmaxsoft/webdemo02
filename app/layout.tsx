@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
+//import { GoogleAnalytics } from '@next/third-parties/google'
 import { LocalBusiness, WithContext } from 'schema-dts';
+import Script from 'next/script';
 import 'bootstrap/dist/css/bootstrap.css'
 import "@/public/css/all.min.css";
 import '@/styles/scss/style.scss'
@@ -16,14 +17,14 @@ import BootstrapClient from '@/components/BootstrapClient'
 import Seo from '@/components/Seo';
 
 const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600'],
   style: ['normal', 'italic'],
   subsets: ['latin']
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stomatolog-dentysta.pl/'),
-  title: 'ArtDent - Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
+  title: 'Dentysta Zielona Góra | stomatolog Zielona Góra | protetyka Zielona Góra',
   description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe',
   keywords: 'stomatolog zielona góra, dentysta zielona góra. Protetyka, Protezy acronowe, Anna Miśków, korony cyrkonowe, zielona góra, gabinet, wybielanie zębów',
   creator: 'Maxsoft',
@@ -62,7 +63,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "url": "https://www.stomatolog-dentysta.pl",
-    "name": "ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra",
+    "name": "Dentysta Zielona Góra, Stomatolog Zielona Góra, protetyka Zielona Góra",
     "alternateName": "Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra",
     "description": "Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe",
     "openingHours": "Poniedziałek, Wtorek, Środa, Czwartek, Piątek 10:00-14:00, Sobota po ugodnieniu telefoninczym, Niedziela NIECZYNNE",
@@ -89,6 +90,12 @@ export default function RootLayout({
 
   return (
     <html lang="pl" itemScope itemType='http://schema.org/WebPage' >
+      <Script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5402951867053415`}
+        strategy="lazyOnload"
+        crossOrigin="anonymous"
+      />
       <body className={poppins.className}>
         <Header />
         <Navigation />
@@ -101,8 +108,23 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          id="google-analytics"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-WNCQ18N99H');
+            `,
+          }}
+        />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WNCQ18N99H"
+          strategy="lazyOnload"
+        />
       </body>
-      <GoogleAnalytics gaId="G-WNCQ18N99H" />
     </html>
   )
 }

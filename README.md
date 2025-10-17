@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stomatolog-Dentysta.pl
 
-## Getting Started
+This is the official repository for the website [stomatolog-dentysta.pl](https://www.stomatolog-dentysta.pl/), a professional dental and prosthodontics clinic based in Zielona Góra, Poland. The website showcases the clinic's services, including general dentistry, pediatric dentistry, aesthetic dentistry, and prosthodontics, while providing a user-friendly interface for patients to explore offerings and contact the clinic.
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You can view the live website here: [https://www.stomatolog-dentysta.pl/](https://www.stomatolog-dentysta.pl/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The website is built using modern web development technologies, with the following key dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: A React framework for server-side rendering and static site generation (version ^14.2.30).
+- **React**: A JavaScript library for building user interfaces (version ^18).
+- **React Bootstrap**: For responsive and styled UI components (version ^2.10.0).
+- **@vis.gl/react-google-maps**: For integrating Google Maps into the website (version ^0.5.4).
+- **Lucide React**: For modern and customizable icons (version ^0.312.0).
+- **Sass**: For advanced CSS styling (version ^1.70.0).
+- **TypeScript**: For type-safe JavaScript development (version ^5).
+- **Bootstrap**: For additional styling and layout utilities (version ^5.3.2).
+- **Other dependencies**: Includes libraries for image optimization, animations, and more (see `package.json` for full list).
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+The project is structured as a Next.js application with the following key scripts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the production-ready application.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs linting to check for code quality issues.
+- `npm run analyze`: Analyzes the bundle size for optimization.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For a complete list of dependencies and scripts, refer to the `package.json` file.
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To set up the project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/stomatolog-dentysta.pl.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd stomatolog-dentysta.pl
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Features
+
+- **Responsive Design**: Built with Bootstrap and React Bootstrap for a seamless experience across devices.
+- **Google Maps Integration**: Displays the clinic's location for easy navigation.
+- **SEO Optimization**: Utilizes Next.js for server-side rendering and static site generation to improve search engine visibility.
+- **Modern UI**: Incorporates animations (via `animate.css`) and parallax effects (via `react-parallax`) for an engaging user experience.
+- **Type Safety**: Uses TypeScript for robust and maintainable code.
+- **Image Optimization**: Leverages `@uploadcare/nextjs-loader` and `webp-loader` for efficient image handling.
+
+## About the Clinic
+
+**ArtDent** is a professional dental clinic located at Bohaterów Westerplatte 9, Zielona Góra, Poland. The clinic offers a wide range of dental services, including:
+
+- Pediatric dentistry (e.g., caries treatment, fluoridation, sealing).
+- General dentistry (e.g., caries treatment, endodontic treatment, surgery).
+- Aesthetic dentistry (e.g., teeth whitening, composite veneers, full-ceramic crowns).
+- Prosthodontics (e.g., flexible acrylic dentures, bridges, zirconium crowns).
+
+The clinic emphasizes patient comfort, modern equipment, and personalized care. For more details, visit the [Services](https://www.stomatolog-dentysta.pl/) section on the website.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
+
+## Contact
+
+For inquiries about the clinic, contact:
+
+- **Phone**: (+48) 504-219-034
+- **Address**: Bohaterów Westerplatte 9, Floor II, Room 216, 65-034 Zielona Góra, Poland
+- **Opening Hours**:
+  - Monday-Wednesday: 10:00 - 15:00
+  - Tuesday-Thursday: 14:00 - 18:00
+
+For technical inquiries about the website, please open an issue in this repository.

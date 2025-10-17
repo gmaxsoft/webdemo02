@@ -482,7 +482,7 @@ h5,
 			height: 300px;
 
 			.bread {
-				font-weight: 700;
+				font-weight: 600;
 				color: $white;
 			}
 
@@ -610,6 +610,9 @@ h5,
 	border-bottom: 4px solid lighten($primary, 4%);
 }
 
+.cardhbig {
+	font-size: 1.75rem !important;
+}
 
 //ABOUT
 .img-2 {
@@ -641,6 +644,10 @@ h5,
 
 		h3 {
 			font-size: 24px;
+		}
+
+		h2 {
+			font-size: 24px !important;
 		}
 	}
 }
@@ -674,6 +681,11 @@ h5,
 		.media-body {
 			h3 {
 				font-size: 18px;
+				color: $black;
+			}
+
+			h2 {
+				font-size: 18px !important;
 				color: $black;
 			}
 		}

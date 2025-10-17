@@ -29,7 +29,7 @@ const Services = () => {
                     <span className={item.icon}></span>
                   </div>
                   <div className="media-body p-2 mt-3">
-                    <h3 className="heading"><a href={item.url}>{item.name}</a></h3>
+                    <h2 className="heading"><a href={item.url}>{item.name}</a></h2>
                     <p>{item.text}</p>
                   </div>
                 </div>
