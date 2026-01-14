@@ -19,7 +19,8 @@ import Seo from '@/components/Seo';
 const poppins = Poppins({
   weight: ['300', '400', '500', '600'],
   style: ['normal', 'italic'],
-  subsets: ['latin']
+  subsets: ['latin'],
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -88,18 +89,23 @@ export default function RootLayout({
     }
   };
 
-  return (
-    <html lang="pl" itemScope itemType='http://schema.org/WebPage' >
-      <Script
+  /*
+  <Script
         async
         src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5402951867053415`}
         strategy="lazyOnload"
         crossOrigin="anonymous"
       />
+  */
+
+  return (
+    <html lang="pl" itemScope itemType='http://schema.org/WebPage' >
       <body className={poppins.className}>
         <Header />
         <Navigation />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer />
         <ScrollToTopButton />
         <BootstrapClient />
@@ -107,22 +113,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Script
-          id="google-analytics"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-WNCQ18N99H');
-            `,
-          }}
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WNCQ18N99H"
-          strategy="lazyOnload"
         />
       </body>
     </html>
