@@ -6,6 +6,9 @@ import Info from '@/components/Info';
 import ParallaxImg from '@/components/ParallaxImg';
 import ContactMap from '@/components/ContactMap';
 
+// ISR: Revalidate co 1 godzinę (3600 sekund)
+export const revalidate = 3600;
+
 export default function Home() {
 
   return (

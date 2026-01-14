@@ -15,10 +15,11 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  // Cache dla stron HTML (SSG/SSR)
-  if (pathname.endsWith('/') || pathname === '') {
-    response.headers.set('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
-  }
+  // Cache dla wszystkich stron HTML (SSG/SSR)
+  // s-maxage: cache na CDN przez 1 godzinę (3600 sekund)
+  // stale-while-revalidate: pozwól na serwowanie starej wersji podczas revalidacji przez 1 dzień
+  // max-age: cache w przeglądarce przez 1 godzinę
+  response.headers.set('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400, max-age=3600');
 
   // Dla API routes (opcjonalnie)
   if (pathname.startsWith('/api')) {

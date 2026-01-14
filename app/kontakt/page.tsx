@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   }
 }
 
+// ISR: Revalidate co 1 godzinę (3600 sekund)
+export const revalidate = 3600;
+
 export default function Kontakt() {
   return (
     <>

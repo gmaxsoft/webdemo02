@@ -48,6 +48,9 @@ const offerDetails: { [key: string]: { title: string; description: string; slug:
   },
 };
 
+// ISR: Revalidate co 1 godzinę (3600 sekund)
+export const revalidate = 3600;
+
 //2. Funkcja generateStaticParams() - klucz do 'output: export'
 export async function generateStaticParams() {
   // W pętli po kluczach obiektu offerDetails (czyli po slugach)
@@ -68,18 +71,35 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.stomatolog-dentysta.pl/';
-  const canonicalUrl = `${baseUrl}/oferta/${detail.slug}`;
+  const canonicalUrl = `${baseUrl}oferta/${detail.slug}/`;
 
   return {
     title: detail.title,
     description: detail.description,
+    keywords: 'stomatolog zielona góra, dentysta zielona góra. Protetyka, Protezy acronowe, Anna Miśków, korony cyrkonowe',
+    creator: 'Maxsoft',
+    publisher: 'Stomatolog - Dentysta',
     alternates: {
       canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true
     },
     openGraph: {
       title: detail.title,
       description: detail.description,
       url: canonicalUrl,
+      siteName: 'ArtDent Dentysta Zielona Góra Stomatolog i protetyka Zielona Góra',
+      locale: 'pl_PL',
+      images: '/opengraph-image.jpg',
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: detail.title,
+      description: detail.description,
+      images: '/twitter-image.jpg'
     },
   };
 }
