@@ -25,9 +25,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stomatolog-dentysta.pl/'),
-  title: 'Dentysta Zielona Góra | stomatolog Zielona Góra | protetyka Zielona Góra',
-  description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe',
-  keywords: 'stomatolog zielona góra, dentysta zielona góra. Protetyka, Protezy acronowe, Anna Miśków, korony cyrkonowe, zielona góra, gabinet, wybielanie zębów',
+  title: 'Dentysta Zielona Góra,stomatolog Zielona Góra,protetyka Zielona Góra, dentysta Anna Miśków',
+  description: 'Gabinet Stomatologiczny ArtDent Anna Miśków - Dentysta Zielona Góra Stomatolog Zielona Góra Protetyka Zielona Góra wybielanie zębów Stomatolog Protezy acronowe, nakładki prostujące',
+  keywords: 'stomatolog zielona góra, dentysta zielona góra. Protetyka, Protezy acronowe, Anna Miśków, korony cyrkonowe, zielona góra, gabinet, wybielanie zębów, nakładki prostujące PRO SMILE',
   creator: 'Maxsoft',
   publisher: 'Stomatolog - Dentysta',
   openGraph: {

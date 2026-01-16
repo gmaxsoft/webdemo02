@@ -10,15 +10,42 @@ You can view the live website here: [https://www.stomatolog-dentysta.pl/](https:
 
 The website is built using modern web development technologies, with the following key dependencies:
 
-- **Next.js**: A React framework for server-side rendering and static site generation (version ^14.2.30).
-- **React**: A JavaScript library for building user interfaces (version ^18).
-- **React Bootstrap**: For responsive and styled UI components (version ^2.10.0).
-- **@vis.gl/react-google-maps**: For integrating Google Maps into the website (version ^0.5.4).
-- **Lucide React**: For modern and customizable icons (version ^0.312.0).
-- **Sass**: For advanced CSS styling (version ^1.70.0).
-- **TypeScript**: For type-safe JavaScript development (version ^5).
-- **Bootstrap**: For additional styling and layout utilities (version ^5.3.2).
-- **Other dependencies**: Includes libraries for image optimization, animations, and more (see `package.json` for full list).
+### Core Framework & Language
+- **Next.js** (^14.2.30): A React framework for server-side rendering and static site generation
+- **React** (^18): A JavaScript library for building user interfaces
+- **TypeScript** (^5): For type-safe JavaScript development
+- **Node.js**: Runtime environment for JavaScript
+
+### UI & Styling
+- **Bootstrap** (^5.3.2): CSS framework for responsive design and layout utilities
+- **React Bootstrap** (^2.10.0): Bootstrap components built with React
+- **Sass** (^1.70.0): CSS preprocessor for advanced styling capabilities
+- **Animate.css** (^4.1.1): Library for CSS animations
+
+### Components & Libraries
+- **Lucide React** (^0.312.0): Modern and customizable icon library
+- **React Parallax** (^3.5.1): Library for creating parallax scrolling effects
+- **React Compare Slider** (^3.0.1): Component for before/after image comparisons
+
+### Maps & Third-Party Services
+- **@react-google-maps/api** (^2.19.2): React wrapper for Google Maps integration
+- **@next/third-parties** (^14.1.0): Next.js integration for third-party scripts
+
+### Image Optimization
+- **Sharp** (^0.34.5): High-performance image processing library
+- **@uploadcare/nextjs-loader** (^1.0.0): Image loader for Next.js with Uploadcare
+- **WebP Loader** (^0.4.0): WebP image format support
+
+### Development Tools
+- **@next/bundle-analyzer** (^15.5.4): Bundle size analysis tool
+- **Cross-env** (^10.0.0): Cross-platform environment variable management
+- **Schema-dts** (^1.1.5): TypeScript definitions for JSON-LD structured data
+- **ESLint**: Code linting (via Next.js)
+
+### Build & Configuration
+- **Next Compose Plugins** (^2.2.1): Plugin composition for Next.js configuration
+
+For a complete list of all dependencies and their versions, refer to the `package.json` file.
 
 ## Project Structure
 
