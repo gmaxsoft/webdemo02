@@ -1,4 +1,4 @@
-# Stomatolog-Dentysta.pl
+# Strona Gabinetu Stomatologicznego
 
 This is the official repository for the website [stomatolog-dentysta.pl](https://www.stomatolog-dentysta.pl/), a professional dental and prosthodontics clinic based in Zielona Góra, Poland. The website showcases the clinic's services, including general dentistry, pediatric dentistry, aesthetic dentistry, and prosthodontics, while providing a user-friendly interface for patients to explore offerings and contact the clinic.
 
